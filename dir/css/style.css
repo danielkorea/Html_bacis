@@ -1,0 +1,114 @@
+/* p{
+    color: black;
+    background-color: green;
+} */
+h1{
+    color: red;
+}
+/* class */
+.food{
+    color: rgb(85, 42, 165);
+}
+.person{
+    background-color: lightblue;
+}
+/* id */
+#css-h1{
+    color: red;
+}
+/* 多个套用css */
+#id-1,.class-1{
+    background-color: gray;
+}
+/* * 表示设置所有标签，但不包括已经设置过的标签 */
+/* * {
+    color: black;
+} */
+ul a{
+    color: red;
+}
+[type]{
+    background-color: lightblue;
+    color: red;
+}
+/* hover 鼠标悬停状态 css更多选择器参考https://www.w3schools.com/cssref/css_selectors.php */
+/* https://www.w3schools.com/cssref/trysel.php */
+#id-1:hover{
+    color:black;
+}
+p:hover{
+    background-color: lightblue;
+}
+
+
+.container{
+    /* flex 预设横排由左至右 */
+    display: flex;
+    /* 不挤压自动换行 */
+    flex-wrap: wrap;
+    /* 排列方向 默认是row */
+    /* flex-direction: column; */
+    height: 300px;
+    border: 1px solid lightblue;
+    justify-content: center;
+    /* 相对排列方向x对应为y轴，单列 */
+    align-items: flex-start;
+    /* 多列居中 */
+    /* align-content: center; */
+}
+.container div{
+    border: 1px solid red;
+    padding: 10px;
+    width: 100px;
+    height: 20px;
+
+
+}
+.box-1{
+    /* order: 按大小排列顺序 */
+    /* flex: 1; */
+    /* flex: 2; */
+    /* order: 1; */
+
+}
+.box-2{
+    /* flex: 1; */
+
+}
+.box-3{
+    /* flex: 1; */
+
+}
+
+
+
+/* animation */
+@keyframes change-color {
+    /* from{background-color: red;}
+    to { background-color: blue;} */
+    /* 按时间段 */
+    /* 0%{ background-color: red;}
+    50%{ background-color: orange;}
+    100%{ background-color: black;} */
+    /* 位移 需设置position:relative*/
+    0%{ background-color: red;top: 10px;left: 10px;}
+    50%{ background-color: orange;top: 40px;left: 10px;}
+    100%{ background-color: black;top: 80px;left: 10px;}
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+  
+
+}
+/* 可以设置响应状态：hover 等等 */
+.box-animation:hover{
+
+    animation-name: change-color;
+    animation-duration: 3s;
+    /* 动画次数 */
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}

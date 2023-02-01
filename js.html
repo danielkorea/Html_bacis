@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js学习</title>
+</head>
+<body>
+    <!-- <script>
+        document.write("<h1>JS学习</h1>")
+
+    </script> -->
+    <!-- <script src="demo.js"></script> -->
+    <br>
+    <button onclick="this.innerHTML=Date()">现在的时间是?</button>
+    <br>
+    <button onmouseover="this.innerHTML=Date()">现在的时间是?</button>
+    <br>
+    <p id="demo">当前时间为？</p>
+    <button onclick=" getElementById('demo').innerHTML=Date()
+    ">现在的时间是?</button>
+    <br>
+    <h1 id="date" style="color: red;">displaydate</h1>
+    <button onclick="displayDate()">点这里</button>
+   <!-- event listener -->
+   <img id="img" src="1.png" alt="" width="300">
+   <button id="btn" onclick="handle_click(this)">按我</button>
+   <button id="btn1">btn1</button>
+   <br>
+   <p>标题</p>
+   <input type="text" id="title">
+   <p>内容</p>
+   <textarea name="" id="content" cols="30" rows="10"></textarea>
+   <button id="btn2">发布</button>
+   <div id="list">
+    <div class="article">
+        <h2>今天天气真好</h2>
+        <p>今天虽然天气好，但是。。。。。</p>
+    </div>
+    <div class="article">
+        <h2>今天天气真好</h2>
+        <p>今天虽然天气好，但是。。。。。</p>
+    </div>
+
+
+   </div>
+
+
+   <script src="demo.js"></script>
+</body>
+</html>

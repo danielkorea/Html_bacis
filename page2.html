@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+</head>
+<body>
+    <div style="color: red;font-size: large;">
+        <h1 style="color: blue;">css入门</h1>
+        <p style="border: 1px dashed green;background-color: rgb(195, 161, 161);">这是一个段落</p>
+        <a href="https://www.w3schools.com/css/css_colors.asp" ><p style="color: black;">css颜色可以参考这个网站</p>
+        </a>
+        <!-- #region padding内边距 & margin外边距-->
+        <div style="padding: 20px 30px 40px 50px;margin-top: -40px;background-color: lightblue;">
+            padding & margin            
+        </div>
+        <div style="padding-left: 20px;padding-right: 20px;background-color: lightblue;margin: 20px;">
+            padding & margin
+        </div>
+        <!-- #region float & display-->
+        <img src="1.png" alt="" width="200" style="float:left ;">
+        <p>图片内容图片内容图片内容图片内容图片内容图片内容图片内容图片内容图片内容图片内容</p>
+        <ul style="float: left;background-color: lightblue;margin: 10px; padding: 10px;">
+            <li>主页</li>
+            <li>联系我们</li>
+            <li>关于</li>
+        </ul>
+        <!--display : block是整行显示比如p标签，inline是有多少内容暂居多少空间比如span标签-->
+        <p style="display:inline ;">列表内容</p>
+        <p style="display: inline;">哈哈</p>
+        <span style="display: block;">span1</span>
+        <span style="display: block;">span2</span>
+        <!-- position 固定定位不会因滑动而改变fixed根据整个网页的frame,relative是相对控件的frame,absolute:绝对定位,不会随页面滑动-->
+        <div style="position: fixed;top: 30px;right: 30px;width: 100px;height: 100px;background-color: red;"></div>
+        <div style="position: relative;top: 30px;right: 30px;width: 100px;height: 100px;background-color: red;"></div>
+        <div style="position: absolute;top: 30px;right: 30px;width: 100px;height: 100px;background-color: lightblue;"></div>
+
+
+        <div style="position: relative;padding: 30px;border:5px solid red">
+            <div style="position: relative;padding: 30px;border:5px solid red">
+                <!-- absolute 不会随着页面滑动，会受外层relative影响 -->
+                <div style="position: absolute;bottom: 0px;left: 0px;width: 40px;height: 40px;background-color:blue;"></div>
+            </div>
+        </div>
+
+        <!-- opacity & border-radius  -->
+        <p style="position: relative;top: 65px;left: 20px;">透明度和设置圆角</p>
+        <div style="opacity: 0.5;width: 300px;height: 80px;background-color: blue;border-radius: 40px;"></div>
+       
+        <!-- css的另一种写法 -->
+        
+
+
+
+
+    </div>
+    
+</body>
+</html>
